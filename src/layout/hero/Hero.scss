@@ -1,0 +1,60 @@
+@import '../../styles/colors';
+
+.hero {
+  &-image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+    }
+
+    &:before {
+      content: "";
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: url('../../images/Mask Group 1.png') center bottom no-repeat;
+    }
+  }
+
+  &-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 2.25rem;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-weight: 900;
+      font-size: 2.25rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.125rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      margin-top: 1rem;
+      margin-right: auto;
+      background-color: $secondary;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+
+      &:hover {
+        background-color: $secondary-dark;
+        color: white;
+      }
+    }
+  }
+}

@@ -1,27 +1,28 @@
 import React from 'react';
 import './App.scss';
 import {Header} from './layout/header/Header';
-import Logo from './images/Footer.png';
-
+import {Hero} from './layout/hero/Hero';
+import {CompaniesLogosSlider} from './layout/companies-logos-slider/CompaniesLogosSlider';
+import {Divider} from './shared/divider/Divider';
+import {AboutUs} from './layout/about-us/AboutUs';
 
 function App() {
     return (
         <>
-            <div className="container">
+            <div className="white-container">
                 <Header/>
 
-                <div className="row">
-                    <div className="col-lg-6 hero-text">
-                        <h1>Sprzedaż hurtowa i detaliczna</h1>
-                        <h2>Art. przemysłowych i chemii gospodarczej</h2>
-                        <p>Artykuły biurowe, kosmetyki, środki higieny, środki czystości, akcesoria i sprzęt do
-                            sprzątania</p>
-                        <button className="btn">Dowiedz się więcej</button>
-                    </div>
-                    <div className="col-lg-6 hero-image">
-                        <img src={Logo} alt={''}/>
-                    </div>
+                <Hero/>
+
+                <Divider/>
+
+                <div className="container">
+                    <CompaniesLogosSlider/>
                 </div>
+            </div>
+
+            <div>
+                <AboutUs/>
             </div>
         </>
     );

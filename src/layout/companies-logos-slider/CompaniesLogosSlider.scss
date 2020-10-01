@@ -1,0 +1,23 @@
+.companies-slider {
+  align-items: center;
+
+  .label {
+    font-weight: bold;
+    color: #80939F;
+  }
+
+  .images {
+    align-items: center;
+
+    .image-item {
+      text-align: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
+
