@@ -1,0 +1,35 @@
+@import 'src/styles/colors';
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+h4 {
+  color: #050C23;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.row {
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+}
+
+button.btn {
+  margin-top: 1rem;
+  margin-right: auto;
+  background-color: $secondary;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+
+  &:hover {
+    background-color: $secondary-dark;
+    color: white;
+  }
+}

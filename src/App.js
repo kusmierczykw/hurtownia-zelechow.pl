@@ -5,6 +5,7 @@ import {Hero} from './layout/hero/Hero';
 import {CompaniesLogosSlider} from './layout/companies-logos-slider/CompaniesLogosSlider';
 import {Divider} from './shared/divider/Divider';
 import {AboutUs} from './layout/about-us/AboutUs';
+import {ContactWithUs} from './layout/contact-with-us/ContactWithUs';
 
 function App() {
     return (
@@ -23,6 +24,12 @@ function App() {
 
             <div>
                 <AboutUs/>
+            </div>
+
+            <div className="white-container">
+                <div className="container">
+                    <ContactWithUs/>
+                </div>
             </div>
         </>
     );
